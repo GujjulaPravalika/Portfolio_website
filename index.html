@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Report System</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact.html" target="_blank">Contact us</a></li>
+                    <input placeholder="documents.in">
+                    <button>search</button>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Cloud Based Health Record System</h1>
+                <p>It is usefull to store medical files <span>digitally</span></p>
+                <p>Everybody can use this website at anywhere anytime</p><br><br><br>
+            </div>
+            <div class="btn">
+                <a href="signup.html" target="_blank">
+                <button class="btn btn-secondary" onclick="display('sectionReg')" class="signbtn">Sign Up</button>
+
+                </a>
+                <a href="login.html" target="_blank">
+                <button class="btn btn-secondary" onclick="display('login')"class="reqbtn">Login</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="abtimg.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>Present days Health records are paper based. Like this it is difficult to carry all files .So this website  is used to store all health records digitally. Users can access it anywhere anytime. This website provides health insurance links for applying for insurance. And also provide notification on free consultancy dates. 
+
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('security')">Security</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li>1 year experience in startup cohort presentations at MLRIT</li>
+                            <li>Working on cloud computing technology</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2020-present </span>Information Technology at MLRIT</li>
+                            <li><span>In 2021 b.tech </span>Lead team at startup</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="security">
+                        <ul>
+                            <li>Providing security by using identity algorithms</li>
+                            <li>Cloud storage system is used to storing info</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="services">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h3 class="underline">Patient Data Management</h3>
+                    <p><span>Electronic Health Records (EHR)</span>  Storage and organization 
+                        of patient health information in digital format.<br>
+                       <span>Demographic Information</span>  and managing patient demographics, 
+                       such as name, age, gender, and contact details.<br>
+                        <span>Medical History</span> and updating a patient's medical history.</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3 class="underline">Interoperability</h3>
+                    <p><span>Health Information Exchange (HIE)</span> Enabling the sharing of patient information across different healthcare providers and systems.<br>
+                       <span>Integration with Other Systems</span> Integrating with laboratory systems, pharmacy systems, and other healthcare IT systems for seamless data exchange.</p><br>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3 class="underline">Billing and Coding</h3>
+                    <p><span>Charge Capture</span> services provided to patients for billing purposes.<br>
+                        <span>ICD and CPT Coding</span>Supporting the coding of diagnoses and procedures<br> for insurance and billing purposes.</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3 class="underline">Security and Privacy</h3>
+                    <p><span>Access Controls</span> Implementing role-based access controls to ensure that only authorized individuals can view or modify certain information.<br>
+                        <span>Encryption</span>Protecting patient data through encryption to maintain confidentiality.</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3 class="underline">Reporting and Analytics</h3>
+                    <p><span>Health Management</span> Analyzing patient data to identify trends, assess outcomes, and manage the health of populations.<br>
+                       <span>Quality Reporting</span> Generating reports for quality improvement initiatives and compliance with regulations</p><br>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h3 class="underline">Patient Portal</h3>
+                    <p><span>Secure Access</span> Allowing patients to access their health records securely.<br>
+                        <span>Appointment Scheduling</span> Enabling patients to schedule appointments online.<br>
+                        <span>Communication</span> Facilitating secure communication between patients and healthcare providers.</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }  
+        </script>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

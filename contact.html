@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+    
+        .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap:40px;
+        margin-top: 50px;
+        }
+        .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .img{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform;
+        }
+        /* for background color and text inside picture*/
+        .layer{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+        .layer a{
+            margin-top: 20px;
+            color:black;
+            text-decoration: none;
+            font: 28px;
+            line-height: 40px;
+            background: #ffff;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin-left: 10px;
+        }
+        .work:hover img{
+            transform: scale(1.1);
+        }
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+            padding: 14px 50px;
+            border-radius: 6px;
+            color: black;
+            transition: background 0.5s;
+        }
+        .btn:hover{
+            background: #ff004f;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/2b250e7309.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <h1>Contact Details</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <div class="work-list">
+        <div class="work">
+        <img src="contact3.png" class="img">
+        <div class="layer">
+            <h2>HelpLine</h2>
+            <p>For assistance or information, please reach out to our helpline at [051-667788] or contact our customer support team through [mail id:healthive@gmail.com], and we'll be happy to help.</p>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        </div>
+        <div class="work">
+        <img src="contact2.png" class="img">
+        <div class="layer">
+            <h2>Missing Files</h2>
+            <p>The absence of a patient's health report files in the digital system has prompted an immediate inquiry, with efforts focused on conducting a thorough audit of data logs and backup systems to trace and recover the missing medical records.</p>
+        </div>
+        </div>
+        <div class="work">
+            <img src="contactimg1.jpg" class="img">
+            <div class="layer">
+            <h2>Medicine Details</h2>
+            <p>Searching medical professionals, pharmacists, or authoritative medical websites. Verify details such as the medication's name, dosage, usage instructions, potential side effects, and any relevant precautions. Accurate and up-to-date information is crucial for making informed decisions about your healthcare, ensuring a safe. </p>
+            </div>
+        </div>
+        
+    </div>
+    <a href="#" class="btn">See more</a>
+        
+</body></html>
